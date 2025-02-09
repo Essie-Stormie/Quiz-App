@@ -1,23 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
+import { quizData } from "./data/data";
 
-const quizData = [
-  {
-    question: "What is the capital of France?",
-    choices: ["Berlin", "Madrid", "Paris", "Rome"],
-    correctAnswer: "Paris",
-  },
-  {
-    question: "Which planet is known as the Red Planet?",
-    choices: ["Earth", "Mars", "Jupiter", "Saturn"],
-    correctAnswer: "Mars",
-  },
-  {
-    question: "Who wrote 'To Kill a Mockingbird'?",
-    choices: ["Harper Lee", "Mark Twain", "J.K. Rowling", "Ernest Hemingway"],
-    correctAnswer: "Harper Lee",
-  },
-];
+
 
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
